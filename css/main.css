@@ -1,0 +1,368 @@
+* {
+font-family:'CaviarDreams', Arial, sans-serif;
+
+}
+article {
+height: 800px;
+float:left;
+position: absolute;
+border-bottom: 5px dashed #ccc;
+}
+
+article, #home_content, header {
+width: 100%;
+}
+
+.header_cont, #home_content, #big_me, .proj_content{
+margin-right: auto;
+margin-left: auto;
+}
+
+/* - //////////////// HEADER START/////////////////// - */
+header {
+font-size: 40px;
+top: 0px;
+position: fixed;
+background-color: white;
+z-index: 999;
+}
+.header_cont {
+text-align: center;
+}
+/* - //////////////// HEADER END/////////////////// - */
+
+/* - //////////////// NAME START/////////////////// - */
+.name{
+border-bottom: 2px dotted black;
+display: inline;
+width: 400px;
+}
+.name a:link, a:visited {
+text-decoration: none;
+color: black;
+}
+/* - //////////////// NAME END/////////////////// - */
+
+/* - //////////////// NAV START/////////////////// - */
+.nav_cont ul{
+font-size: 16px;
+text-align: center;
+padding-right: 40px;
+}
+.nav_cont li {
+list-style-type: none;
+padding-left: 10px;
+padding-right: 10px;
+display: inline;
+}
+.nav_cont a:hover, .proj_content a:hover {
+text-shadow: 1px 1px 1px #444; 
+}
+.nav_cont a:link, a:visited {
+text-decoration: none;
+color: black;
+}
+/* - //////////////// NAV END/////////////////// - */
+
+
+/* - //////////////// HOME START /////////////////// - */
+#home_content {
+position: absolute;
+margin-top: 100px;
+background: url(../pics/bg_bars.png) no-repeat center center;
+background-size: auto 700px;
+padding-top: 0px;
+}
+#big_me {
+padding-top: 20px;
+width: 550px;
+display: block;
+-webkit-transition: -webkit-transform 1s ease-in;
+-webkit-transform: rotate(10deg)
+}
+#big_me:hover,#big_me:focus,#big_me:active {
+-webkit-transform: rotate(-10deg);
+} 
+/* - //////////////// HOME END /////////////////// - */
+
+
+/* - //////////////// PANEL START/////////////////// - */
+#panel_and_me {
+width: 960px;
+margin-left: auto;
+margin-right: auto;
+}
+.panel {
+float: left;
+margin-top: 90px;
+margin-left: 20px;
+background: #FFFFFF;
+height: auto;
+width: 450px;
+padding: 10px 30px 10px 30px;
+opacity: 0.85;
+filter: alpha(opacity=85);
+    -moz-box-shadow: 0 0 25px 5px #888;
+	-webkit-box-shadow: 0 0 25px 5px #888;
+	box-shadow: 0 0 25px 5px #888;
+}
+.panel h1 {
+font-size: 36px;
+}
+.panel a:link, a:visited {
+font-weight: bold;
+color: black;
+}
+.panel .link:hover {
+font-size: 28px;
+text-shadow: 1px 1px 1px #444; 
+}
+/* - //////////////// PANEL END/////////////////// - */
+
+
+/* - //////////////// ABOUT START/////////////////// - */
+#about {
+background: url(../pics/about_bg1.png) no-repeat center 0% scroll;
+opacity: .85;
+filter: alpha(opacity=85);
+background-size: auto 800px;
+top: 750px;
+clear: right;
+}
+#about_content {
+font: 24px/30px 'ColaborateRegular', Arial, sans-serif;/*20px 'CaviarDreams', Arial, sans-serif;*/
+padding: 40px;
+}
+#about_trig {
+opacity: 115;
+filter: alpha(opacity=115);
+height: 600px;
+text-decoration: none;
+font-size: 16px;
+/*display: block;
+background: url(../pics/about_me2.png) no-repeat;
+background-size: 400px;*/
+z-index: 20;
+}
+#about_me {
+margin-top: 189px;
+margin-right:30px;
+width: 350px;
+float: right;
+}
+
+#about_me:hover {
+width: 360px;
+cursor: pointer;
+}
+
+#about_me:active {
+width: 340px;
+}
+.active #about_me {
+/*margin-top: -80px;
+margin-right: 50px;*/
+}
+/* - //////////////// ABOUT END/////////////////// - */
+
+/* - //////////////// PROJECTS START/////////////////// - */
+#projects {
+background: url(../pics/projects_bg.png) no-repeat center 0% scroll;
+background-size: auto 710px;
+top: 1600px;
+}
+#proj_cont {
+width: 960px;
+margin-top: 55px;
+margin-left: auto;
+margin-right: auto;
+}
+#proj_trigger img {
+/*background:url(../pics/projects_me.png) no-repeat;
+background-size: 320px auto;*/
+width: 325px;
+float: left;
+height: 300px;
+margin-top: 200px;
+margin-left: -60px;
+}
+
+#proj_trigger img:hover{
+cursor: pointer;
+}
+
+/* BeautifulBackground jQuery slider*/   
+.menuWrapper, ul.menu {
+width: 693px;
+}          
+  
+.menuWrapper{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 1.45em;
+    position:relative;
+    float: left;
+    height:500px;
+    background-position:0 0;
+    background-repeat:no-repeat;
+    background-color:transparent;
+    -moz-box-shadow: 0 0 25px 5px #888;
+	-webkit-box-shadow: 0 0 25px 5px #888;
+	box-shadow: 0 0 25px 5px #888;
+}
+ul.menu{
+    list-style:none;
+}
+
+ul.menu > li, ul.menu > li > a, ul.menu > li ul {
+width: 230px;
+}
+
+ul.menu > li{
+    float:left;
+    border-right:1px solid #777;
+    background-repeat:no-repeat;
+    background-color:transparent;
+    margin-top: -15px;
+}
+ul.menu > li.last{
+    border:none;
+}
+.bg1{
+    background-image: url(../pics/1.png);
+}
+.bg2{
+    background-image: url(../pics/indo2.jpg);
+}
+.bg3{
+    background-image: url(../pics/robodance.png);
+}
+ul.menu > li > a{
+    float:left;
+    height:50px;
+    margin-top:450px;
+    text-align:center;
+    line-height:50px;
+    color:#ddd;
+    background-color:#333;
+    letter-spacing:1px;
+    cursor:pointer;
+    text-decoration:none;
+    color: #F7EF7C;
+    text-shadow:0px 0px 1px #fff;
+    overflow: hidden;
+}
+ul.menu > li ul{
+    list-style:none;
+    float:left;
+    margin-top:-255px;
+    height:185px;
+    padding-top:20px;
+    background-repeat:no-repeat;
+    background-color:transparent;
+}
+ul.menu > li ul li{
+    display:none;
+}
+ul.menu > li ul.sub1{
+    background-image:url(../pics/bg1sub.png);
+    background-repeat: repeat-y;
+    
+}
+ul.menu > li ul.sub2{
+    background-image:url(../pics/bg2sub.png);
+}
+ul.menu > li ul.sub3{
+    background-image:url(../pics/bg3sub.png);
+}
+ul.menu > li ul li a{
+    color:#fff;
+    text-decoration:none;
+    line-height:30px;
+    /*margin-left:20px;*/
+    text-shadow:1px 1px 1px #444;
+    font-size:11px;
+}
+ul.menu > li ul.sub1 li{
+    display:block;
+}
+ul.menu > li ul li a:hover{
+    border-bottom:1px dotted #fff;
+}
+/*End Reference objects. */
+/* - //////////////// PROJECTS END/////////////////// - */
+
+/* - //////////////// POPUP FRAME START /////////////////// - */
+.tbox {position:absolute; display:none; padding:14px 17px; z-index:900}
+.tinner {padding:15px; -moz-border-radius:5px; border-radius:5px; background:#fff url(../pics/preload.gif) no-repeat 50% 50%; border-right:1px solid #333; border-bottom:1px solid #333}
+.tmask {position:absolute; display:none; top:0px; left:0px; height:100%; width:100%; background:#000; z-index:800}
+.tclose {position:absolute; top:0px; right:0px; width:30px; height:30px; cursor:pointer; background:url(../pics/close.png) no-repeat}
+.tclose:hover {background-position:0 -30px}
+
+#error {background:#ff6969; color:#fff; text-shadow:1px 1px #cf5454; border-right:1px solid #000; border-bottom:1px solid #000; padding:0}
+#error .tcontent {padding:10px 14px 11px; border:1px solid #ffb8b8; -moz-border-radius:5px; border-radius:5px}
+#success {background:#2ea125; color:#fff; text-shadow:1px 1px #1b6116; border-right:1px solid #000; border-bottom:1px solid #000; padding:10; -moz-border-radius:0; border-radius:0}
+#bluemask {background:#000}
+#frameless {padding:0}
+#frameless .tclose {left:6px}
+/* - //////////////// POPUP FRAME END /////////////////// - */
+
+/* - //////////////// INDIV PROJ PAGE START /////////////////// - */
+#proj_wrapper {
+margin: auto;
+padding: 10px;
+width: 800px;
+}
+#proj_wrapper p, #proj_wrapper div {
+font-family: 'Helvetica';
+}
+.main_proj_pic_horiz img, .main_proj_pic_vert img {
+float: left;
+display: table-row;
+border: 1px solid black;
+}
+.main_proj_pic_horiz img {
+width: 530px;
+}
+.main_proj_pic_vert img {
+width: 500px;
+}
+.proj_content {
+width: 250px;
+float:right;
+}
+.proj_content h2, #proj_wrapper p {
+margin: 0;
+}
+#see_more_wrapper {
+float: left;
+overflow-x:hidden;
+}
+#see_more {
+padding: 15px;
+margin-left: 300px;
+width: 175px;
+cursor: pointer;
+}
+#more_info {
+display: none;
+}
+.text_desc {
+margin: 10px 0;
+float: left;
+}
+.text_desc img, .main_proj_pic img {
+border: 2px #777 solid;
+border-radius: 4px;
+box-shadow: 1px 4px 4px rgba(100,100,100, .4);
+}
+.text_desc img {
+margin: 10px 30px;
+}
+.photos {
+width: 300px;
+margin-bottom: 20px;
+}
+/* - //////////////// INDIV PROJ PAGE START /////////////////// - */
